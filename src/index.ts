@@ -1,7 +1,8 @@
 import express, { urlencoded } from "express"
 import cookieParser from "cookie-parser"
-import productRoutes from "./routes/products/index"
-import userRoutes from "./routes/users/index"
+import productRoutes from "./routes/products/index.js"
+import userRoutes from "./routes/users/index.js"
+import orderRoutes from "./routes/orders/index.js"
 import "dotenv/config"
 
 const app=express();
@@ -14,6 +15,7 @@ app.use(cookieParser())
 
 app.use("/api/products",productRoutes)
 app.use("/api/users",userRoutes)
+app.use("/api/orders",orderRoutes)
 
 
 

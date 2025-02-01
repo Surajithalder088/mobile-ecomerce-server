@@ -1,6 +1,6 @@
 import express from "express"
-import { registeruser,loginuser,userprofile} from "../../controllers/users/index";
-import { verifyUser } from "../../middleware/auth.middleware";
+import { registeruser,loginuser,userprofile} from "../../controllers/users/index.js";
+import { verifyUser } from "../../middleware/auth.middleware.js";
 const router=express.Router()
 
 router.post("/register",registeruser)

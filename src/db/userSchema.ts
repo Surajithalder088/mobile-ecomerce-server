@@ -6,5 +6,6 @@ export const userTable=pgTable('users',{
     email:varchar({length:255}).notNull(),
     password:varchar({length:255}).notNull(),
     role:varchar({length:255}).notNull().default('user'),
+    
 
 })

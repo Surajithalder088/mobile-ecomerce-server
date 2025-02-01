@@ -1,7 +1,7 @@
 import { Request ,Response} from "express"
-import {db} from "../../db/index"
-import { productTable } from "../../db/productSchema"
-import { userTable } from "../../db/userSchema"
+import {db} from "../../db/index.js"
+import { productTable } from "../../db/productSchema.js"
+import { userTable } from "../../db/userSchema.js"
 import { eq } from "drizzle-orm"
 import jwt from "jsonwebtoken"
 

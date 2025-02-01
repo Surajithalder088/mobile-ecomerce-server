@@ -7,7 +7,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node --import=tsx src/index.ts",
+    "start": "node --import=tsx dist/src/index.ts",
     "dev": "node --import=tsx --watch src/index.ts",
     "build": "tsc",
     "db:generate": "drizzle-kit generate",

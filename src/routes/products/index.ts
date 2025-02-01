@@ -1,5 +1,5 @@
 import express from "express"
-import { getLists ,getProductById ,createProduct,updateProduct,deleteProduct} from "../../controllers/products/index";
+import { getLists ,getProductById ,createProduct,updateProduct,deleteProduct} from "../../controllers/products/index.js";
 const router=express.Router()
 
 router.get("/",getLists)
