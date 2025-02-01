@@ -1,4 +1,4 @@
-import express, { urlencoded } from "express"
+import express, { Request,Response, urlencoded } from "express"
 import cookieParser from "cookie-parser"
 import productRoutes from "./routes/products/index.js"
 import userRoutes from "./routes/users/index.js"
@@ -17,7 +17,9 @@ app.use("/api/products",productRoutes)
 app.use("/api/users",userRoutes)
 app.use("/api/orders",orderRoutes)
 
-
+app.get('/',(req:Request,res:Response)=>{
+    res.status(200).json({message:"server is running"})
+})
 
 app.listen(port,()=>{
     console.log("server  running on :",port);
